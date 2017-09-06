@@ -1,0 +1,204 @@
+body {
+  position: relative; }
+
+.wrapper {
+  background: url("../img/bg-production.jpg") center center no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.header__logo, .menu-img {
+  z-index: 3;
+  height: 50px; }
+
+.submenu-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.submenu-bg {
+  width: 54px;
+  height: 480px;
+  background-color: rgba(0, 94, 130, 0.8);
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1; }
+
+.submenu {
+  display: none; }
+
+.submenu-bg:hover ~ .submenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 96%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 81px 0px 20px 4%;
+  background-color: rgba(0, 94, 130, 0.8); }
+
+.submenu__link {
+  margin-bottom: 21px;
+  font-family: "OpenSans", "Tahoma", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #e5e4e4; }
+  .submenu__link:hover {
+    color: #fff; }
+
+.detail__play {
+  width: 43px; }
+
+.about__title {
+  margin: 45px 14px;
+  font-family: "OpenSansCondensed", "Tahoma", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase; }
+
+.display-none {
+  display: none; }
+
+.footer-wrp {
+  margin: 0 auto; }
+
+.main__blue_bg,
+.main__blue_bg-ftr {
+  display: none; }
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    height: 680px; }
+  .header {
+    position: relative;
+    height: 593px; }
+  .submenu-container {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    top: 0;
+    left: 0; }
+  .submenu-bg {
+    display: none; }
+  .submenu {
+    margin-right: auto;
+    width: 200px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 152px 0 0 30px;
+    background-color: rgba(0, 94, 130, 0.8); }
+  .submenu__link {
+    margin-bottom: 30px;
+    font-size: 10px; }
+  .detail {
+    margin-left: 247px;
+    margin-top: 146px;
+    width: 442px; }
+    .detail h1 {
+      line-height: 1.5; }
+  .main {
+    margin: 0 auto;
+    width: 767px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .main__blue_bg {
+    display: block;
+    width: 230px;
+    background-color: rgba(0, 94, 130, 0.8); }
+  .about {
+    margin-bottom: 0;
+    width: 484px;
+    background: transparent; }
+    .about__title {
+      margin: 34px 7px; }
+      .about__title::after {
+        content: "_____";
+        display: block; }
+  .footer {
+    position: relative;
+    width: 767px;
+    margin-top: 0; }
+    .footer__item {
+      margin-bottom: 40px; }
+  .main__blue_bg-ftr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 230px;
+    height: 100%;
+    background-color: rgba(0, 94, 130, 0.8);
+    z-index: -1; } }
+
+@media screen and (min-width: 1280px) {
+  .wrapper {
+    display: block;
+    height: 722px; }
+  .header {
+    width: 1230px;
+    height: 674px; }
+  .header__logo img {
+    margin-left: 33px; }
+  .detail {
+    margin-left: 442px;
+    margin-top: 124px; }
+    .detail h1 {
+      width: 87%; }
+  .submenu {
+    width: 318px; }
+    .submenu__link {
+      margin-bottom: 12px;
+      padding-bottom: 15px;
+      padding-left: 33px;
+      font-size: 12px; }
+  .main {
+    width: 1230px; }
+    .main__blue_bg {
+      width: 348px; }
+  .about {
+    padding-left: 68px;
+    padding-right: 0;
+    width: 778px; }
+  .footer {
+    width: 1230px; }
+  .main__blue_bg-ftr {
+    width: 348px; } }
